@@ -137,7 +137,7 @@ async function stopOPCUAClient() {
             process.exit(0);
         });
     } catch (err) {
-        console.log(chalk.bgRed.white("Error" + err.message));
+        console.log(chalk.red("Error" + err.message));
         console.log(err);
         process.exit(-1);
     }
