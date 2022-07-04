@@ -114,7 +114,7 @@ async function stopOPCUAClient() {
     if (session) await session.close();
     if (client) await client.disconnect();
 }
-/////////////////////////// Starting The Server
+/////////////////////////// Starting The Server ////////////////////////
 (async () => {
     try {
         // --------------------------------------------------------
