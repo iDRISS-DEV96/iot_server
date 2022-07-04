@@ -1,0 +1,23 @@
+{
+  "name": "iot-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tensorflow/tfjs-node": "^3.18.0",
+    "@types/express": "^4.17.13",
+    "@types/socket.io": "^2.1.10",
+    "d3": "^7.5.0",
+    "danfojs-node": "^1.1.1",
+    "express": "^4.17.1",
+    "node-opcua": "^2.69.1",
+    "node-opcua-client": "^2.69.1",
+    "socket.io": "^4.5.1"
+  }
+}
