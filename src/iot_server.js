@@ -90,7 +90,7 @@ async function createOPCUAClient(io) {
         parameters,
         TimestampsToReturn.Both
     );
-
+/////////////// Send to the font-end App ///////////////////
     monitoredTemp.on("changed", (dataValue) => {
         io.sockets.emit("temperature", dataValue.value.value);
         io.sockets.emit("time", dataValue.serverTimestamp);
