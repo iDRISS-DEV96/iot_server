@@ -70,11 +70,13 @@ async function createOPCUAClient(io) {
         discardOldest: true,
         queueSize: 100,
     };
+    // vitesse
     const monitoredVit = await subscription.monitor(
         VitToMonitor,
         parameters,
         TimestampsToReturn.Both
     );
+    // debit
     const monitoredDebit = await subscription.monitor(
         DebitToMonitor,
         parameters,
