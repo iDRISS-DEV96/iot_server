@@ -82,11 +82,13 @@ async function createOPCUAClient(io) {
         parameters,
         TimestampsToReturn.Both
     );
+    // debit
     const monitoredPertes = await subscription.monitor(
         PertesMonitor,
         parameters,
         TimestampsToReturn.Both
     );
+    // debit
     const monitoredTemp = await subscription.monitor(
         TempToMonitor,
         parameters,
